@@ -1,6 +1,7 @@
 package elevator.system.classes;
 
 import elevator.system.enums.ElevatorState;
+import elevator.system.exceptions.InvalidFloorException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,5 +44,17 @@ public class Elevator {
 
     public void evaluateWeight() {
 
+    }
+
+    public boolean selectDestination(int number) throws InvalidFloorException {
+        if(isInvalid(number)) {
+            throw new InvalidFloorException();
+        }
+
+        return true;
+    }
+
+    private boolean isInvalid(int number) {
+        return false;
     }
 }
