@@ -37,4 +37,11 @@ public class Elevator {
     }
 
 
+    public boolean isOverWeight() {
+        return false;
+    }
+
+    public void evaluateWeight() {
+
+    }
 }
